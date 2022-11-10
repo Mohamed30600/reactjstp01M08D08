@@ -11,6 +11,8 @@ import Exercice5 from "./component/Exercices/Exercice5";
 import Exercice6 from "./component/Exercices/Exercice6";
 import Country from "./component/Exercices/Country";
 
+
+
 const App = () => {
   return (
     <div className="App">
@@ -22,7 +24,7 @@ const App = () => {
           <Route path="/exercice/1" element={<Exercice1 />} />
           <Route path="/exercice/2" element={<Exercice2 />} />
           <Route path="/exercice/3" element={<Exercice3 />} />
-          <Route path="/exercice/4" element={<Exercice4 />} />
+          <Route path="/exercice/4" element={<Exercice4 />}  />
           <Route path="/exercice/5" element={<Exercice5 />} />
           <Route path="/exercice/6" element={<Exercice6 />} />
           <Route path="/country/:country" element={<Country />}  Country={Country}/>

@@ -1,50 +1,70 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
-    return (
-        <div className='navigation'>
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="navbar-brand" href="#"></div>
 
-            <ul>
-                <NavLink to ="/" className={(nav)=>(nav.isActive ? "nav-active": "")}>
-                    <li>Acceuil</li>
-                </NavLink>
-                <NavLink to ="/exercice/1" className={(nav)=>(nav.isActive ? "nav-active": "")}>
-                    <li>Exercice 1</li>
-                </NavLink>
-                <NavLink to ="/exercice/2" className={(nav)=>(nav.isActive ? "nav-active": "")}>
-                    <li>Exercice 2</li>
-                </NavLink>
-                <NavLink to ="/exercice/3" className={(nav)=>(nav.isActive ? "nav-active": "")}>
-                    <li>Exercice 3</li>
-                </NavLink>
-                <NavLink to ="/exercice/4" className={(nav)=>(nav.isActive ? "nav-active": "")}>
-                    <li>Exercice 4</li>
-                </NavLink>
-                <NavLink to ="/exercice/5" className={(nav)=>(nav.isActive ? "nav-active": "")}>
-                    <li>Exercice 5</li>
-                </NavLink>
-                <NavLink to ="/exercice/6" className={(nav)=>(nav.isActive ? "nav-active": "")}>
-                    <li>Exercice 6</li>
-                </NavLink>
-                <NavLink to ="country/france" className={(nav)=>(nav.isActive ? "nav-active": "")}>
-                    <li>Donnee Api France</li>
-                </NavLink>
-                <NavLink to ="country/german" className={(nav)=>(nav.isActive ? "nav-active": "")}>
-                    <li>Donnee Api German</li>
-                </NavLink>
-                <NavLink to ="country/canada" className={(nav)=>(nav.isActive ? "nav-active": "")}>
-                    <li>Donnee Api Canada</li>
-                </NavLink>
-                <NavLink to ="/documentation" className={(nav)=>(nav.isActive ? "nav-active": "")}>
-                    <li>Documentation</li>
-                </NavLink>
-                
-            </ul>
-
-            
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav">
+            <li className="nav-item active">
+              <NavLink className="nav-link" to="/">
+                Acceuil
+              </NavLink>
+              <span className="sr-only"></span>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/exercice/1">
+                Exercice 1
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/exercice/2">
+                Exercice 2
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/exercice/3">
+                Exercice 3
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/exercice/4">
+                Exercice 4
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/exercice/5">
+                Exercice 5
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/exercice/6">
+                Exercice 6
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/country/france">
+                Api_France
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/country/german">
+                Api_German
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/country/canada">
+                Api_Canada
+              </NavLink>
+            </li>
+          </ul>
         </div>
-    );
+      </nav>
+    </>
+  );
 };
 
 export default Navigation;

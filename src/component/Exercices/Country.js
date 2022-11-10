@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from 'react-router-dom';
+import Navigation from "../Navigation";
 
 const Country = () => {
     let {country} = useParams();
@@ -24,6 +25,7 @@ const Country = () => {
 
     return (
     <div>
+        <Navigation/>
     <h1>{country}</h1>
     <img src={topLevelDomain} /><br />
     Capitale : <b>{capital}</b>
